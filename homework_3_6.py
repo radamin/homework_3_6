@@ -34,26 +34,26 @@
 # Если символ повторяется более 1 раза, к нему добавляется количество повторений.
 
 
-strings = 'AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'
-
-
-def rle(string):
-    zip_data = ''
-    preview = ''
-    count = 1
-    if not string:
-        return ''
-    for char in string:
-        if char != preview:
-            if preview:
-                zip_data += str(count) + preview
-            count = 1
-            preview = char
-        else:
-            count += 1
-    else:
-        zip_data += str(count) + preview
-        return zip_data
-
-
-print(rle(strings))
+# strings = 'AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB'
+#
+#
+# def rle(string):
+#     zip_data = ''
+#     preview = ''
+#     count = 1
+#     if not string:
+#         return ''
+#     for char in string:
+#         if char != preview:
+#             if preview:
+#                 zip_data += str(count) + preview
+#             count = 1
+#             preview = char
+#         else:
+#             count += 1
+#     else:
+#         zip_data += str(count) + preview
+#         return zip_data
+#
+#
+# print(rle(strings))
